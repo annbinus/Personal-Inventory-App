@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="Final commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/ListItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/ListItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,34 +100,13 @@
       <recent name="ucf.assignments" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.binus-7525-a5 [run]">
+  <component name="RunManager" selected="Gradle.ListItemsTest.searchFilterTest_for_serialNumber">
     <configuration name="ItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ucf.assignments.ItemTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ListItemsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ucf.assignments.ListItemsTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -185,6 +164,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ListItemsTest.searchFilterTest_for_serialNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ucf.assignments.ListItemsTest.searchFilterTest_for_serialNumber&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="binus-7525-a5 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,19 +207,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ListItemsTest" />
       <item itemvalue="Gradle.binus-7525-a5 [run]" />
       <item itemvalue="Gradle.ItemTest" />
       <item itemvalue="Gradle.ListItemsTest.searchFilter" />
       <item itemvalue="Gradle.ListItemsTest.searchFilterTest" />
+      <item itemvalue="Gradle.ListItemsTest.searchFilterTest_for_serialNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ListItemsTest.searchFilterTest_for_serialNumber" />
         <item itemvalue="Gradle.binus-7525-a5 [run]" />
         <item itemvalue="Gradle.ListItemsTest.searchFilterTest" />
         <item itemvalue="Gradle.ListItemsTest.searchFilter" />
         <item itemvalue="Gradle.ItemTest" />
-        <item itemvalue="Gradle.ListItemsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627244593856</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Final commit">
+      <created>1627244831952</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1627244831952</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Final commit">
+      <created>1627245007575</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1627245007575</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
