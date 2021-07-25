@@ -6,6 +6,8 @@ package ucf.assignments;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -147,7 +149,7 @@ class ListItemsTest {
     void sortSRNumberList() {
         openFile();//initialize listItem.getItems
 
-        //create new observable list to store list
+        //create new observable list to store list of items
         ObservableList<Item> ob = FXCollections.observableArrayList(listItems.getItems());
 
         //use sort() method to sort the serial numbers in the list
@@ -166,5 +168,37 @@ class ListItemsTest {
 
         boolean value = listItems.checkSRNumber(listItems.getItems().get(0).getSerialNumber());
         assertEquals(true, value);
+    }
+
+    private MainWindowController controller = new MainWindowController();
+
+    @Test
+    void searchFilterTest() {
+        openFile();//initialize listItem.getItems()
+
+        //create an observable list to save all items
+        ObservableList<Item> observableList = FXCollections.observableArrayList();
+
+        for (Item item : listItems.getItems()) {
+            observableList.add(item);
+        }
+
+        String newValue = "67FUY";//create a string variable that matches one of the names in the item list
+
+        //Wrap the observable list in a FilteredList
+        FilteredList<Item> filteredData = new FilteredList<>(observableList, b -> true);
+
+        //set the filter predicate to either true or false
+        filteredData.setPredicate(item -> {
+            //Compare the name in every item in the filter list
+            return controller.findNewValue(newValue, item);
+        });
+
+        //Wrap the FilteredList in a SortedList
+        SortedList<Item> sortedData = new SortedList<>(filteredData);
+
+
+        //assert equals for item in the listItem arraylist and sortedData list
+        assertEquals(listItems.getItems().get(1), sortedData.get(0));
     }
 }

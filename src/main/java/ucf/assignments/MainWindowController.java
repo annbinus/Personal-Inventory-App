@@ -315,6 +315,48 @@ public class MainWindowController implements Initializable {
         listItems.sortValueList(ob);
     }
 
+
+    public boolean findNewValue(String newValue, Item item){
+        if (newValue == null || newValue.isEmpty()) {
+            return true;
+        }
+
+        String lowerCaseFilter = newValue.toLowerCase();
+
+        if (item.getName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+            return true;
+        } else if (item.getSerialNumber().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+            return true;
+        } else if (item.getValue().indexOf(lowerCaseFilter) != -1)
+            return true;
+        else
+            return false;
+    }
+
+    public void setSearchText(){
+        //create new observable list to store list of items
+        ObservableList<Item> observableList = FXCollections.observableArrayList();
+
+        for (Item item : listItems.getItems()) {
+            observableList.add(item);
+        }
+
+        FilteredList<Item> filteredData = new FilteredList<>(observableList, b -> true);
+
+        searchText.textProperty().addListener((observable, oldValue, newValue) -> filteredData.setPredicate(item -> {
+
+            return findNewValue(newValue, item);
+
+        }));
+
+        SortedList<Item> sortedData = new SortedList<>(filteredData);
+
+        sortedData.comparatorProperty().bind(tableView.comparatorProperty());
+
+        tableView.setItems(sortedData);
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
@@ -338,37 +380,8 @@ public class MainWindowController implements Initializable {
         //set the table editable so the user can change values
         setTableCellEditable();
 
-        ObservableList<Item> observableList = FXCollections.observableArrayList();
+        setSearchText();
 
-        for (Item item : listItems.getItems()) {
-            observableList.add(item);
-        }
-
-        FilteredList<Item> filteredData = new FilteredList<>(observableList, b -> true);
-
-        searchText.textProperty().addListener((observable, oldValue, newValue) -> filteredData.setPredicate(item -> {
-
-            if (newValue == null || newValue.isEmpty()) {
-                return true;
-            }
-
-            String lowerCaseFilter = newValue.toLowerCase();
-
-            if (item.getName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                return true;
-            } else if (item.getSerialNumber().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                return true;
-            } else if (item.getValue().indexOf(lowerCaseFilter) != -1)
-                return true;
-            else
-                return false;
-        }));
-
-        SortedList<Item> sortedData = new SortedList<>(filteredData);
-
-        sortedData.comparatorProperty().bind(tableView.comparatorProperty());
-
-        tableView.setItems(sortedData);
     }
 
     @FXML

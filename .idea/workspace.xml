@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="UML file update" />
+    <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="UML file update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/Item.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/Item.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/ListItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/ListItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +84,7 @@
     <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -97,7 +104,7 @@
       <recent name="ucf.assignments" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.binus-7525-a5 [run]">
+  <component name="RunManager" selected="Gradle.ListItemsTest.searchFilterTest">
     <configuration name="ItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,12 +147,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ListItemsTest.checkSRNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ListItemsTest.searchFilter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ucf.assignments.ListItemsTest.checkSRNumber&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ucf.assignments.ListItemsTest.searchFilter&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -161,12 +168,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MainWindowControllerTest.checkSRNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ListItemsTest.searchFilterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ucf.assignments.MainWindowControllerTest.checkSRNumber&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ucf.assignments.ListItemsTest.searchFilterTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -206,17 +213,17 @@
     <list>
       <item itemvalue="Gradle.ListItemsTest" />
       <item itemvalue="Gradle.binus-7525-a5 [run]" />
-      <item itemvalue="Gradle.MainWindowControllerTest.checkSRNumber" />
-      <item itemvalue="Gradle.ListItemsTest.checkSRNumber" />
       <item itemvalue="Gradle.ItemTest" />
+      <item itemvalue="Gradle.ListItemsTest.searchFilter" />
+      <item itemvalue="Gradle.ListItemsTest.searchFilterTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ListItemsTest.searchFilterTest" />
+        <item itemvalue="Gradle.ListItemsTest.searchFilter" />
         <item itemvalue="Gradle.binus-7525-a5 [run]" />
         <item itemvalue="Gradle.ItemTest" />
         <item itemvalue="Gradle.ListItemsTest" />
-        <item itemvalue="Gradle.ListItemsTest.checkSRNumber" />
-        <item itemvalue="Gradle.MainWindowControllerTest.checkSRNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -376,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627191775291</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="UML file update">
+      <created>1627192757652</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1627192757652</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
