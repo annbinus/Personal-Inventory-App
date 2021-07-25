@@ -191,8 +191,11 @@ public class OpenSaveFile {
             //create a new Item containing data read from file
             Item newItem = new Item(item[0], item[1], item[2]);
 
-            // add new item to ListItems
+            // add new item to observable list
             ob.add(newItem);
+
+            //add new item to ListItems arraylist
+            listItems.getItems().add(newItem);
         }
         return ob;
     }
@@ -227,6 +230,9 @@ public class OpenSaveFile {
 
                 //add new item with data to observable list
                 ob.add(new Item(cols.get(0).text(), cols.get(1).text(), cols.get(2).text()));
+
+                //add new item to ListItems arraylist
+                listItems.getItems().add(new Item(cols.get(0).text(), cols.get(1).text(), cols.get(2).text()));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -259,6 +265,9 @@ public class OpenSaveFile {
                 //get each Item data from the Item object
                 //create new Item containing data and add it to observable list
                 ob.add(new Item((String) item.get("Value"), (String) item.get("Serial Number"), (String) item.get("Name")));
+
+                //add new item to ListItems arraylist
+                listItems.getItems().add(new Item((String) item.get("Value"), (String) item.get("Serial Number"), (String) item.get("Name")));
             }
         } catch (IOException e) {
             e.printStackTrace();

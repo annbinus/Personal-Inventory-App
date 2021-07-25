@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="Test Case for search filter">
+    <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="Extra comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/Item.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/Item.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627240869350</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Extra comments">
+      <created>1627241895455</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1627241895455</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +434,8 @@
     <MESSAGE value="Copyright" />
     <MESSAGE value="UML file update" />
     <MESSAGE value="Test Case for search filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Case for search filter" />
+    <MESSAGE value="Extra comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extra comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
