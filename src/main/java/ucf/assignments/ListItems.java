@@ -97,20 +97,26 @@ public class ListItems {
     }
 
     public void sortNameList(ObservableList<Item> ob){
-        clearAllItems();
+        clearAllItems();//clear list
+
+        //add each item from the observable list to the item arraylist
         for(Item item: ob){
             itemList.add(item);
         }
     }
 
     public void sortValueList(ObservableList<Item> ob){
-        clearAllItems();
+        clearAllItems();//clear list
+
+        //add each item from the observable list to the item arraylist
         for(Item item: ob){
             itemList.add(item);
         }
     }
     public void sortSRNumberList(ObservableList<Item> ob){
-        clearAllItems();
+        clearAllItems();//clear list
+
+        //add each item from the observable list to the item arraylist
         for(Item item: ob){
             itemList.add(item);
         }
@@ -118,7 +124,9 @@ public class ListItems {
 
     public boolean checkSRNumber(String srNumber) {
 
-        boolean flag = false;
+        boolean flag = false;//create flag
+
+        //check if serialnumber matches with any serial number on the item arraylist
         for (Item item : itemList) {
             if (item.getSerialNumber().equals(srNumber.toUpperCase())) {
                 flag = true;
