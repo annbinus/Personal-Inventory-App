@@ -95,6 +95,7 @@ public class MainWindowController implements Initializable {
             //round the value to decimal places
             convertVal = Math.round(convertVal * 100.0) / 100.0;
 
+            //use number formatter to format the value into currency format
             NumberFormat formatter = NumberFormat.getCurrencyInstance();
             String newVal = formatter.format(convertVal);
 
@@ -317,12 +318,14 @@ public class MainWindowController implements Initializable {
 
 
     public boolean findNewValue(String newValue, Item item){
+        //If filter text is empty, display all items.
         if (newValue == null || newValue.isEmpty()) {
             return true;
         }
 
         String lowerCaseFilter = newValue.toLowerCase();
 
+        // Compare the name, value, and the serial number of every item with filter text.
         if (item.getName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
             return true;
         } else if (item.getSerialNumber().toLowerCase().indexOf(lowerCaseFilter) != -1) {
@@ -341,18 +344,25 @@ public class MainWindowController implements Initializable {
             observableList.add(item);
         }
 
+        //Wrap the observable list in a FilteredList
         FilteredList<Item> filteredData = new FilteredList<>(observableList, b -> true);
 
+        //add listener to the searchText text field
+        //set the filter predicate to either true or false
         searchText.textProperty().addListener((observable, oldValue, newValue) -> filteredData.setPredicate(item -> {
 
+            //check if the value is valid
             return findNewValue(newValue, item);
 
         }));
 
+        //Wrap the FilteredList in a SortedList
         SortedList<Item> sortedData = new SortedList<>(filteredData);
 
+        //Bind the SortedList comparator to the TableView comparator
         sortedData.comparatorProperty().bind(tableView.comparatorProperty());
 
+        //Add sorted (and filtered) data to the table
         tableView.setItems(sortedData);
 
     }
@@ -380,6 +390,7 @@ public class MainWindowController implements Initializable {
         //set the table editable so the user can change values
         setTableCellEditable();
 
+        //set table with the searched value in the search bar
         setSearchText();
 
     }
@@ -392,8 +403,10 @@ public class MainWindowController implements Initializable {
         // remove item from the List
         listItems.removeItem(item);
 
+        //Wrap teh arraylist into an observable list
         ObservableList<Item> ob = FXCollections.observableArrayList(listItems.getItems());
 
+        //set items to the tableview
         tableView.setItems(ob);
     }
 }

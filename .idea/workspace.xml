@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="UML file update">
+    <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="Test Case for search filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/Item.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/Item.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/ListItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/ListItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,7 @@
       <recent name="ucf.assignments" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ListItemsTest.searchFilterTest">
+  <component name="RunManager" selected="Gradle.binus-7525-a5 [run]">
     <configuration name="ItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,9 +217,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.binus-7525-a5 [run]" />
         <item itemvalue="Gradle.ListItemsTest.searchFilterTest" />
         <item itemvalue="Gradle.ListItemsTest.searchFilter" />
-        <item itemvalue="Gradle.binus-7525-a5 [run]" />
         <item itemvalue="Gradle.ItemTest" />
         <item itemvalue="Gradle.ListItemsTest" />
       </list>
@@ -390,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627192757652</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Test Case for search filter">
+      <created>1627240869350</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1627240869350</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +427,8 @@
     <MESSAGE value="New Test Cases" />
     <MESSAGE value="Copyright" />
     <MESSAGE value="UML file update" />
-    <option name="LAST_COMMIT_MESSAGE" value="UML file update" />
+    <MESSAGE value="Test Case for search filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Case for search filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
