@@ -1,0 +1,132 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Main{
+-start()
+-main()
+
+}
+
+class MainWindowController{
+
+-ListItems listItems
+
+-TableView<Item> tableView
+-TableColumn<Item, String> name
+-TableColumn<Item, String> serialNumber
+-TableColumn<Item, String> value
+
+-TextField searchText
+-Button addButton
+
++editNameColumn()
++editSerialNumberColumn()
++editValueColumn()
+
++getList()
+
++openFile()
+
++handleAddButton()
++handleRemoveButton()
++handleFileOpen()
++handleFileDownload()
+
++sortName()
++sortSerialNumber()
++sortValue()
+
++initialize()
+
+}
+
+class ListItems{
+
+-int count
+
+-ArrayList<Item> itemList
+
++ListItems()
+
++addItem()
++removeItem()
+
++clearAllItems()
+
++editName()
++editSerialNumber()
++editValue()
+
++sortNameList()
++sortSRNumber()
++sortValueList()
+
++checkSRNumber()
+
++getItems()
+
+}
+
+class Item{
+-String name
+-String serialNumber
+-String value;
+
++Item()
+
++getName()
++setName()
+
++getSerialNumber()
++setSerialNumber()
+
++getValue()
++setValue()
+
++toString()
+
+}
+
+class ItemController{
+
+TextArea name
+TextArea serialNumber
+TextArea value
+
+Button enterButton
+
+Label
++handleEnterButton()
++initialize()
+
+}
+
+class OpenSaveFile{
++openFile()
+
++saveTSVFile()
++saveHTMLFile()
++saveJSONFile()
+
++openTSVFile()
++openHTMLFile()
++openJSONFile()
+
+}
+
+Javafx.Application <|-- Main
+
+Main <|-- MainWindowController
+ListItems <- MainWindowController
+
+Main --> ListItems
+ListItems <-- Item
+
+OpenSaveFile <- ListItems
+MainWindowController <-- OpenSaveFile
+
+ItemController -> Item
+
+
+
+@enduml
