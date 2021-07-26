@@ -24,7 +24,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
+            root = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));//load fxml file
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -44,6 +44,8 @@ public class Main extends Application {
         try {
 
             FileWriter fwrite = new FileWriter("files/Item.txt");
+
+            //loop through each item and write on file
             for (Item item : MainWindowController.getList()) {
                 fwrite.write(item.toString() + "\n");
             }

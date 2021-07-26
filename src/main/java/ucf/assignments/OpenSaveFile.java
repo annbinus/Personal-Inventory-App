@@ -63,7 +63,7 @@ public class OpenSaveFile {
             //all the data from the present ListItems is written on a text file
             FileWriter write = new FileWriter(file.toString());
 
-            write.write("Value\tSerialNumber\tName\n");// table column heading
+            write.write("Value\tSerial Number\tName\n");// table column heading
 
             //write the ListItems items on the file
             for (Item item : listItems.getItems()) {

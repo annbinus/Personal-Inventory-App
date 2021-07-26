@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e52ad-4611-4f04-a435-14220a2cde49" name="Default Changelist" comment="Final commit">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/ListItemsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/OpenSaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/OpenSaveFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +103,7 @@
       <recent name="ucf.assignments" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ListItemsTest.searchFilterTest_for_serialNumber">
+  <component name="RunManager" selected="Gradle.binus-7525-a5 [run]">
     <configuration name="ItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,8 +218,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ListItemsTest.searchFilterTest_for_serialNumber" />
         <item itemvalue="Gradle.binus-7525-a5 [run]" />
+        <item itemvalue="Gradle.ListItemsTest.searchFilterTest_for_serialNumber" />
         <item itemvalue="Gradle.ListItemsTest.searchFilterTest" />
         <item itemvalue="Gradle.ListItemsTest.searchFilter" />
         <item itemvalue="Gradle.ItemTest" />
@@ -421,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627245007575</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Final commit">
+      <created>1627250201740</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1627250201740</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

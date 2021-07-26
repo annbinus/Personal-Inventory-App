@@ -74,12 +74,12 @@ public class MainWindowController implements Initializable {
                 listItems.editSerialNumber(itemSelected, cell.getNewValue());
             } else {
                 JOptionPane.showMessageDialog(null, "Serial Number already taken.", "Error", JOptionPane.ERROR_MESSAGE);
-                tableView.refresh();
+                tableView.refresh();// refresh table after editing
                 return;
             }
         } else {
             JOptionPane.showMessageDialog(null, "Invalid Serial Number! Please try again!", "Error", JOptionPane.ERROR_MESSAGE);
-            tableView.refresh();
+            tableView.refresh();// refresh table after editing
             return;
         }
 
@@ -179,6 +179,7 @@ public class MainWindowController implements Initializable {
     @FXML
     public void handleFileOpen(Event event) {
 
+        //create OpenSaveFile object to open files
         OpenSaveFile open = new OpenSaveFile();
 
         FileChooser fileChooser = new FileChooser();
